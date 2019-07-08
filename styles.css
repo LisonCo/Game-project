@@ -1,7 +1,14 @@
+#canvasDiv {
+    width : 1000px;
+    height : 1000px;
+}
+
 
 /* SETTING CANVAS BACKGROUND */
 
 #garden {
+    width : 1000px;
+    height : 1000px;
     background-image: url("Images/grass.png");
     background-repeat: repeat;
 }
