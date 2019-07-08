@@ -1,0 +1,7 @@
+
+/* SETTING CANVAS BACKGROUND */
+
+#garden {
+    background-image: url("Images/grass.png");
+    background-repeat: repeat;
+}
