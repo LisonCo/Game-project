@@ -1,6 +1,15 @@
-#canvasDiv {
+body {
+    background-image : url("images/background.jpg")
+}
+
+h1 {
+    margin : 0;
+}
+
+#canvas-div {
     width : 600px;
     height : 600px;
+    margin : 2%;
 }
 
 /* SETTING CANVAS BACKGROUND */
@@ -8,6 +17,61 @@
 #garden {
     width : 600px;
     height : 600px;
-    background-image: url("images/grass.png");
+    background-image: url("images/grass.jpg");
     background-repeat: repeat;
+}
+
+#main-div {
+    display : flex;
+    flex-direction : row;
+}
+
+#right-part {
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    align-items : center;
+    margin : 2%;
+}
+
+#game-name-image img{
+    width : 150px;
+    height : 150px;
+    border : 2px solid orange;
+}
+
+.white-box {
+    width : 90%;
+    margin : 5%;
+    background : white;
+    display : flex;
+    flex-direction : column;
+    border : 2px solid orange;
+}
+
+#instructions {
+  text-align : center;
+}
+
+.recipe-basket {
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+}
+
+.recipe-basket-columns {
+    display : flex;
+    flex-direction : column;
+    width : 50%;
+    align-items : center;
+}
+
+.recipe-basket-columns img {
+    height : 15%;
+    width : 15%;
+    margin : 2%;
+}
+
+.basket .recipe{
+    width : 90%;
 }
