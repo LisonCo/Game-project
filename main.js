@@ -203,15 +203,17 @@ function reDrawEverything() {
     prepareCharacter(myCharacter);
 }
 
-var pickedVegetables = []
+var pickedVegetables = [];
+var myBasket = [];
 
 function whenCollision() {
     //////////////////////////////////////////////////////////////////////////////////:
     // TO BE MODIFIED ACCORDING TO THE RECIPE //
-    if (vegetableCollision[0].vgType == "tomato"){
+    if (recipeBook['recipe'][0]['ingredients'].includes(vegetableCollision[0].vgType)){
         console.log("good choice");
         pickedVegetables.push(vegetableCollision[0])
-        console.log(pickedVegetables)
+        updateBasket();
+        pickedVegetables = [];
     } else {
         console.log("wrong vg!")
     }

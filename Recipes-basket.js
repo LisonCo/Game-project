@@ -19,10 +19,12 @@ var recipeBook = {
 
 function loadRecipe(){
     document.getElementsByTagName("h1")[0].innerHTML = recipeBook['recipe'][0]['recipe-name'];
-    document.getElementById("recipe-ingredients").innerHTML = recipeBook['recipe'][0]['ingredients'].toString();
+    document.getElementById("recipe-ingredients").innerHTML = recipeBook['recipe'][0]['ingredients'];
 }
 
 function updateBasket(){
-    document.getElementById("picked-vg")
+    var newImg = document.createElement("IMG");
+    newImg.setAttribute ("src", pickedVegetables[0].path);
+    document.getElementById("picked-vg").appendChild(newImg);
 }
 
