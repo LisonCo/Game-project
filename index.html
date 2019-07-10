@@ -7,6 +7,7 @@
     <title>Game project </title>
     <link type="text/css" rel="stylesheet" href="styles.css" media="screen">
 </head>
+
 <body>
 
     <div id="main-div">
@@ -14,40 +15,45 @@
         <div id="canvas-div">
             <canvas id="garden" height="600px" width="600px"></canvas>
         </div>
-        <div id="right-part">
 
+        <div id="right-part">
             <div id="game-name-image">
                 <img src="images/eatyourveggies.jpg">
              </div>
-
+             <div id="message">
+                <p id="message-p"></p>
+             </div>
             <div class="white-box">
                 <div id="instructions">
-                    <p>Pick the right vegetables to make your recipe !</p>
+                    <p>Pick the right vegetables to make your recipe</p>
                 </div>
                 <div class="recipe-basket">
                     <div class="recipe-basket-columns">
-                        <img src="images/book.svg">
-                        <div class="recipe">
-                            <h1>Recipe Name</h1>
-                            <p id="recipe-ingredients"></p>
+                        <div class="recipe-basket-columns-header">
+                                <div class="twoImages"><img src="images/book.svg"></div>
+                                    <h1>Recipe Name</h1>
                         </div>
-                    </div>
+                            <div>
+                                <ul id="recipe-ingredients"></ul>
+                            </div>
+                        </div>
                     <div class="recipe-basket-columns">
-                        <img src="images/basket.svg" id="basket-image">
-                        <div class="basket">
-                                <h1>Your basket</h1>
+                            <div class="recipe-basket-columns-header">
+                                <div class="twoImages"><img src="images/basket.svg" id="basket-image"></div>
+                                        <h1>Your basket</h1>
                                 <div id="picked-vg"></div>
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
-
+            <div>
+                    <button id="new-recipe-button" class="hideButton" type="button">New Recipe</button>
+            </div> 
         </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="Recipes-basket.js"></script>
-    <script type="text/javascript" src="recipes.js"></script>
 </body>
 </html>

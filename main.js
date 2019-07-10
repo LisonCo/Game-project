@@ -14,7 +14,7 @@ class Character {
     }
 }
 
-var myCharacter = new Character(250, 250, "images/girl.png", 50, 50);
+var myCharacter = new Character(270, 270, "images/girl.png", 50, 50);
 
 // CHARACTER DRAW FONCTION 
 function prepareCharacter(character){
@@ -63,67 +63,69 @@ class Vegetables {
 
 var myVegetables = [];
 
-myVegetables.push(new Vegetables(50, 50, "images/tomato.png", 30, 30, "tomato"));
-myVegetables.push(new Vegetables(100, 50, "images/tomato.png", 30, 30, "tomato"));
-myVegetables.push(new Vegetables(150, 50, "images/tomato.png", 30, 30, "tomato"));
-myVegetables.push(new Vegetables(200, 50, "images/tomato.png", 30, 30, "tomato"));
+myVegetables.push(new Vegetables(50, 50, "images/tomato.png", 30, 30, "Tomato"));
+myVegetables.push(new Vegetables(100, 50, "images/tomato.png", 30, 30, "Tomato"));
+myVegetables.push(new Vegetables(50, 100, "images/tomato.png", 30, 30, "Tomato"));
+myVegetables.push(new Vegetables(100, 100, "images/tomato.png", 30, 30, "Tomato"));
 
-myVegetables.push(new Vegetables(350, 50, "images/pepper.png", 30, 30, "pepper"));
-myVegetables.push(new Vegetables(400, 50, "images/pepper.png", 30, 30, "pepper"));
-myVegetables.push(new Vegetables(450, 50, "images/pepper.png", 30, 30, "pepper"));
-myVegetables.push(new Vegetables(500, 50, "images/pepper.png", 30, 30, "pepper"));
+myVegetables.push(new Vegetables(350, 100, "images/pepper.png", 30, 30, "Pepper"));
+myVegetables.push(new Vegetables(400, 100, "images/pepper.png", 30, 30, "Pepper"));
+myVegetables.push(new Vegetables(350, 150, "images/pepper.png", 30, 30, "Pepper"));
+myVegetables.push(new Vegetables(400, 150, "images/pepper.png", 30, 30, "Pepper"));
 
-myVegetables.push(new Vegetables(50, 150, "images/cabbage.png", 30, 30, "cabbage"));
-myVegetables.push(new Vegetables(100, 150, "images/cabbage.png", 30, 30, "cabbage"));
-myVegetables.push(new Vegetables(150, 150, "images/cabbage.png", 30, 30, "cabbage"));
-myVegetables.push(new Vegetables(200, 150, "images/cabbage.png", 30, 30, "cabbage"));
+myVegetables.push(new Vegetables(150, 150, "images/cabbage.png", 30, 30, "Cabbage"));
+myVegetables.push(new Vegetables(200, 150, "images/cabbage.png", 30, 30, "Cabbage"));
+myVegetables.push(new Vegetables(150, 200, "images/cabbage.png", 30, 30, "Cabbage"));
+myVegetables.push(new Vegetables(200, 200, "images/cabbage.png", 30, 30, "Cabbage"));
 
-myVegetables.push(new Vegetables(350, 150, "images/mushroom.png", 30, 30, "musrhoom"));
-myVegetables.push(new Vegetables(400, 150, "images/mushroom.png", 30, 30, "musrhoom"));
-myVegetables.push(new Vegetables(450, 150, "images/mushroom.png", 30, 30,"musrhoom"));
-myVegetables.push(new Vegetables(500, 150, "images/mushroom.png", 30, 30,"musrhoom"));
+myVegetables.push(new Vegetables(450, 50, "images/mushroom.png", 30, 30, "Mushroom"));
+myVegetables.push(new Vegetables(500, 50, "images/mushroom.png", 30, 30, "Mushroom"));
+myVegetables.push(new Vegetables(450, 100, "images/mushroom.png", 30, 30,"Mushroom"));
+myVegetables.push(new Vegetables(500, 100, "images/mushroom.png", 30, 30,"Mushroom"));
 
-myVegetables.push(new Vegetables(50, 250, "images/bean.png", 30, 30, "bean"));
-myVegetables.push(new Vegetables(100, 250, "images/bean.png", 30, 30, "bean"));
-myVegetables.push(new Vegetables(150, 250, "images/bean.png", 30, 30, "bean"));
-myVegetables.push(new Vegetables(200, 250, "images/bean.png", 30, 30, "bean"));
+myVegetables.push(new Vegetables(50, 250, "images/bean.png", 30, 30, "Bean"));
+myVegetables.push(new Vegetables(100, 250, "images/bean.png", 30, 30, "Bean"));
+myVegetables.push(new Vegetables(150, 250, "images/bean.png", 30, 30, "Bean"));
+myVegetables.push(new Vegetables(200, 250, "images/bean.png", 30, 30, "Bean"));
 
-myVegetables.push(new Vegetables(350, 250, "images/carrot.png", 30, 30, "carrot"));
-myVegetables.push(new Vegetables(400, 250, "images/carrot.png", 30, 30, "carrot"));
-myVegetables.push(new Vegetables(450, 250, "images/carrot.png", 30, 30, "carrot"));
-myVegetables.push(new Vegetables(500, 250, "images/carrot.png", 30, 30, "carrot"));
+myVegetables.push(new Vegetables(350, 250, "images/carrot.png", 30, 30, "Carrot"));
+myVegetables.push(new Vegetables(400, 250, "images/carrot.png", 30, 30, "Carrot"));
+myVegetables.push(new Vegetables(450, 250, "images/carrot.png", 30, 30, "Carrot"));
+myVegetables.push(new Vegetables(500, 250, "images/carrot.png", 30, 30, "Carrot"));
 
-myVegetables.push(new Vegetables(50, 350, "images/pumpkin.png", 30, 30, "pumpkin"));
-myVegetables.push(new Vegetables(100, 350, "images/pumpkin.png", 30, 30, "pumpkin"));
-myVegetables.push(new Vegetables(150, 350, "images/pumpkin.png", 30, 30, "pumpkin"));
-myVegetables.push(new Vegetables(200, 350, "images/pumpkin.png", 30, 30, "pumpkin"));
+myVegetables.push(new Vegetables(50, 350, "images/pumpkin.png", 30, 30, "Pumpkin"));
+myVegetables.push(new Vegetables(50, 400, "images/pumpkin.png", 30, 30, "Pumpkin"));
+myVegetables.push(new Vegetables(50, 450, "images/pumpkin.png", 30, 30, "Pumpkin"));
+myVegetables.push(new Vegetables(50, 500, "images/pumpkin.png", 30, 30, "Pumpkin"));
 
-myVegetables.push(new Vegetables(350, 350, "images/aubergine.png", 30, 30, "aubergine"));
-myVegetables.push(new Vegetables(400, 350, "images/aubergine.png", 30, 30, "aubergine"));
-myVegetables.push(new Vegetables(450, 350, "images/aubergine.png", 30, 30, "aubergine"));
-myVegetables.push(new Vegetables(500, 350, "images/aubergine.png", 30, 30, "aubergine"));
+myVegetables.push(new Vegetables(350, 350, "images/aubergine.png", 30, 30, "Aubergine"));
+myVegetables.push(new Vegetables(400, 350, "images/aubergine.png", 30, 30, "Aubergine"));
+myVegetables.push(new Vegetables(350, 400, "images/aubergine.png", 30, 30, "Aubergine"));
+myVegetables.push(new Vegetables(400, 400, "images/aubergine.png", 30, 30, "Aubergine"));
 
-myVegetables.push(new Vegetables(50, 450, "images/turnip.png", 30, 30, "turnip"));
-myVegetables.push(new Vegetables(100, 450, "images/turnip.png", 30, 30, "turnip"));
-myVegetables.push(new Vegetables(150, 450, "images/turnip.png", 30, 30, "turnip"));
-myVegetables.push(new Vegetables(200, 450, "images/turnip.png", 30, 30, "turnip"));
+myVegetables.push(new Vegetables(150, 400, "images/turnip.png", 30, 30, "Turnip"));
+myVegetables.push(new Vegetables(200, 400, "images/turnip.png", 30, 30, "Turnip"));
+myVegetables.push(new Vegetables(150, 450, "images/turnip.png", 30, 30, "Turnip"));
+myVegetables.push(new Vegetables(200, 450, "images/turnip.png", 30, 30, "Turnip"));
 
-myVegetables.push(new Vegetables(350, 450, "images/broccoli.png", 30, 30, "broccoli"));
-myVegetables.push(new Vegetables(400, 450, "images/broccoli.png", 30, 30, "broccoli"));
-myVegetables.push(new Vegetables(450, 450, "images/broccoli.png", 30, 30, "broccoli"));
-myVegetables.push(new Vegetables(500, 450, "images/broccoli.png", 30, 30, "broccoli"));
+myVegetables.push(new Vegetables(500, 350, "images/broccoli.png", 30, 30, "Broccoli"));
+myVegetables.push(new Vegetables(500, 400, "images/broccoli.png", 30, 30, "Broccoli"));
+myVegetables.push(new Vegetables(500, 450, "images/broccoli.png", 30, 30, "Broccoli"));
+myVegetables.push(new Vegetables(500, 500, "images/broccoli.png", 30, 30, "Broccoli"));
 
-myVegetables.push(new Vegetables(50, 550, "images/leek.png", 30, 30, "leek"));
-myVegetables.push(new Vegetables(100, 550, "images/leek.png", 30, 30, "leek"));
-myVegetables.push(new Vegetables(150, 550, "images/leek.png", 30, 30, "leek"));
-myVegetables.push(new Vegetables(200, 550, "images/leek.png", 30, 30, "leek"));
+myVegetables.push(new Vegetables(50, 550, "images/leek.png", 30, 30, "Leek"));
+myVegetables.push(new Vegetables(100, 550, "images/leek.png", 30, 30, "Leek"));
+myVegetables.push(new Vegetables(150, 550, "images/leek.png", 30, 30, "Leek"));
+myVegetables.push(new Vegetables(200, 550, "images/leek.png", 30, 30, "Leek"));
 
-myVegetables.push(new Vegetables(350, 550, "images/garlic.png", 30, 30, "garlic"));
-myVegetables.push(new Vegetables(400, 550, "images/garlic.png", 30, 30, "garlic"));
-myVegetables.push(new Vegetables(450, 550, "images/garlic.png", 30, 30, "garlic"));
-myVegetables.push(new Vegetables(500, 550, "images/garlic.png", 30, 30, "garlic"));
+myVegetables.push(new Vegetables(350, 550, "images/garlic.png", 30, 30, "Garlic"));
+myVegetables.push(new Vegetables(400, 550, "images/garlic.png", 30, 30, "Garlic"));
+myVegetables.push(new Vegetables(450, 550, "images/garlic.png", 30, 30, "Garlic"));
+myVegetables.push(new Vegetables(300, 550, "images/garlic.png", 30, 30, "Garlic"));
 
 myVegetables.forEach(veggie => drawVegetables(veggie))
+
+var defaultVegetables = [].concat(myVegetables) 
 
 // VEGETABLES DRAWING FUNCTION 
 
@@ -193,29 +195,49 @@ function collisionCheck(myCharacter, vegetableArray){
             vegetableCollision.push(vegetableArray[i]);
             vegetableArray.splice(i, 1)
             whenCollision();
-            reDrawEverything();
+            recipeComplete();
+            reDrawEverything(myVegetables, myCharacter);
         }
     }
 }
 
-function reDrawEverything() {
-    myVegetables.forEach(veggie => drawVegetables(veggie));
-    prepareCharacter(myCharacter);
+// Redraw the canvas after each click
+function reDrawEverything(vegetableArray, character) {
+    vegetableArray.forEach(veggie => drawVegetables(veggie));
+    prepareCharacter(character);
 }
 
 var pickedVegetables = [];
-var myBasket = [];
+var myBasket = {};
 
+// What happened after a collision 
 function whenCollision() {
-    //////////////////////////////////////////////////////////////////////////////////:
-    // TO BE MODIFIED ACCORDING TO THE RECIPE //
     if (recipeBook['recipe'][0]['ingredients'].includes(vegetableCollision[0].vgType)){
-        console.log("good choice");
+        goodPick();
         pickedVegetables.push(vegetableCollision[0])
         updateBasket();
+        if(myBasket[vegetableCollision[0].vgType]) {
+            myBasket[vegetableCollision[0].vgType] ++;
+        } else {
+            myBasket[vegetableCollision[0].vgType] = 1;
+        }
         pickedVegetables = [];
     } else {
-        console.log("wrong vg!")
+        wrongPick()
     }
     vegetableCollision = [];
 }
+
+// Check if all the ingredients of the recipe have been picked
+function recipeComplete(){
+    var myCount = 0
+    for (i=0; i< recipeBook['recipe'][0]['ingredients'].length; i++){
+        if(myBasket[recipeBook['recipe'][0]['ingredients'][i]]){
+            myCount++;
+            if (myCount == recipeBook['recipe'][0]['ingredients'].length){
+                recipeReady();
+            }
+         } 
+    }
+}
+
