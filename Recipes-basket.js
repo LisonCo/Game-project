@@ -17,6 +17,11 @@ function updateBasket(){
 
 // MESSAGES 
 
+//STARTING MESSAGE
+function firstMessage(){
+    document.getElementById("message-p").innerHTML = "Pick the right vegetables to make your recipe!";
+}
+
 // RIGHT VEGETABLE PICKED
 function goodPick(){
     document.getElementById("message-p").innerHTML = "One more delicious ingredient for your recipe!";
@@ -41,6 +46,9 @@ function wrongPick(){
         myBasket = {};
         document.getElementById("recipe-ingredients").innerHTML = "";
         loadRecipe();
-        reDrawEverything(defaultVegetables, myCharacter)
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+        myCharacter['x'] = 270;
+        myCharacter['y'] = 270;
+        updateCanvas(myCharacter, defaultVegetables);
         myVegetables = [].concat(defaultVegetables)
     })

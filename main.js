@@ -1,4 +1,3 @@
-
 // CANVAS
 var canvas = document.getElementById("garden");
 var ctx = canvas.getContext('2d');
@@ -27,8 +26,6 @@ function prepareCharacter(character){
         ctx.drawImage(character.img, character.x, character.y, character.height, character.width);
     }
 }
-
-prepareCharacter(myCharacter);
 
 // CHARACTER MOVEMENT
 function moveUp(){
@@ -150,13 +147,13 @@ function drawVegetables(veggie){
       case 39: moveRight(); break;
     }
     collisionCheck(myCharacter, myVegetables);
-    updateCanvas();
+    updateCanvas(myCharacter, myVegetables);
   }
 
-  function updateCanvas(){
+  function updateCanvas(character, vegetables){
       ctx.clearRect(0,0, canvas.width, canvas.height);
-      myVegetables.forEach(veggie => veggie.updVeggies());
-      myCharacter.upd()
+      vegetables.forEach(veggie => veggie.updVeggies());
+      character.upd()
       setBoundaries(myCharacter);
   }
 
@@ -204,7 +201,7 @@ function collisionCheck(myCharacter, vegetableArray){
 // Redraw the canvas after each click
 function reDrawEverything(vegetableArray, character) {
     vegetableArray.forEach(veggie => drawVegetables(veggie));
-    prepareCharacter(character);
+    character.upd();
 }
 
 var pickedVegetables = [];
