@@ -1,26 +1,3 @@
-// Contains all the possible recipes
-var recipeBook = { 
-    "recipe" : [
-        {
-        "recipe-name": "Ratatouille",
-        "ingredients": [
-            "Tomato",
-            "Pepper",
-            "Aubergine",
-            "Garlic",
-            "Mushroom",
-        ]
-        },
-        // {
-        // "recipe-name" : "Salad",
-        // "ingredients" : {
-        //     "salad": 2,
-        //     "tomato": 3,
-        // }
-        // }
-    ]
-}   
-
 //Display the recipe
 function loadRecipe(){
     document.getElementsByTagName("h1")[0].innerHTML = recipeBook['recipe'][0]['recipe-name'];

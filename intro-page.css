@@ -1,0 +1,57 @@
+#intro {
+    position:absolute;
+    margin : 0;
+    padding : 0;
+    width: 100%;
+    height: 100%;
+    background-image : url(images/background.jpg);
+}
+
+#intro-div{
+    border : 3px solid orange;
+    background-color: white;
+    margin : 5%;
+    display : flex;
+    flex-direction : column; 
+    align-items : center;
+    padding : 1.5%;
+}
+
+.hidden{
+    display : none;
+}
+
+#intro-div img{
+    width : 50vh;
+    height : 40vh;
+}
+
+.small-box {
+    border : 4px solid orange;
+    font-size : 2em;
+    padding : 0.4em;
+}
+
+#two-characters {
+    display : flex;
+    flex-direction : row;
+    height : 50%;
+    margin-top : 5%;
+    width : 60%;
+}
+
+#two-characters img {
+    height : 25vh;
+    width : 25vh;
+}
+
+.character-image-div {
+    width : 50%;
+    text-align : center;
+}
+
+#girl-button,
+#boy-button {
+    border : none;
+    background-color : white;
+}
