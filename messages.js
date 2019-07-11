@@ -17,6 +17,9 @@ function wrongPick(){
 
 // This recipe is finished
     function recipeReady(){
+        var audio = new Audio();
+        audio.src = "sounds/win.wav";
+        audio.play();
         document.getElementById("message-p").innerHTML = `You are now ready to cook a ${currentRecipe["recipe-name"]}!`;
         $("#win").toggleClass("hidden");
         $("#new-recipe-button").toggleClass("hidden");
@@ -35,5 +38,5 @@ function wrongPick(){
         myCharacter['x'] = 270;
         myCharacter['y'] = 270;
         updateCanvas(myCharacter, defaultVegetables);
-        myVegetables = [].concat(defaultVegetables)
+        myVegetables = [].concat(defaultVegetables);
     })

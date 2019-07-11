@@ -1,7 +1,6 @@
 #canvas-div {
     width : 600px;
     height : 600px;
-    margin : 2%;
 }
 
 #garden {
@@ -10,4 +9,22 @@
     background-image: url("images/grass.jpg");
     background-repeat: repeat;
     border : 3px solid orange;
+}
+
+#canvas-timer {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    height : 800px;
+    margin : 2%;
+}
+
+.timer {
+    border : 3px solid orange;
+    margin : 0.5em;
+    padding : 1em 0.8em 0.8em 0.8em;
+    height : 2vh;
+    background-color : white;
+    width : 20%;
+    text-align : center;
 }

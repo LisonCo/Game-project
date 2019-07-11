@@ -11,7 +11,6 @@ class Character {
         this.width = width;
         this.height = height;
     }
- // CHARACTER MOVEMENT
     moveUp(){
         myCharacter.y -= 25
     }
@@ -79,10 +78,10 @@ myVegetables.push(new Vegetables(500, 50, "images/mushroom.png", 30, 30, "Mushro
 myVegetables.push(new Vegetables(450, 100, "images/mushroom.png", 30, 30,"Mushroom"));
 myVegetables.push(new Vegetables(500, 100, "images/mushroom.png", 30, 30,"Mushroom"));
 
-myVegetables.push(new Vegetables(50, 250, "images/bean.png", 30, 30, "Bean"));
-myVegetables.push(new Vegetables(100, 250, "images/bean.png", 30, 30, "Bean"));
-myVegetables.push(new Vegetables(150, 250, "images/bean.png", 30, 30, "Bean"));
-myVegetables.push(new Vegetables(200, 250, "images/bean.png", 30, 30, "Bean"));
+myVegetables.push(new Vegetables(50, 250, "images/bean.png", 30, 30, "Peas"));
+myVegetables.push(new Vegetables(100, 250, "images/bean.png", 30, 30, "Peas"));
+myVegetables.push(new Vegetables(150, 250, "images/bean.png", 30, 30, "Peas"));
+myVegetables.push(new Vegetables(200, 250, "images/bean.png", 30, 30, "Peas"));
 
 myVegetables.push(new Vegetables(350, 250, "images/carrot.png", 30, 30, "Carrot"));
 myVegetables.push(new Vegetables(400, 250, "images/carrot.png", 30, 30, "Carrot"));
@@ -94,10 +93,10 @@ myVegetables.push(new Vegetables(50, 400, "images/pumpkin.png", 30, 30, "Pumpkin
 myVegetables.push(new Vegetables(50, 450, "images/pumpkin.png", 30, 30, "Pumpkin"));
 myVegetables.push(new Vegetables(50, 500, "images/pumpkin.png", 30, 30, "Pumpkin"));
 
-myVegetables.push(new Vegetables(350, 350, "images/aubergine.png", 30, 30, "Aubergine"));
-myVegetables.push(new Vegetables(400, 350, "images/aubergine.png", 30, 30, "Aubergine"));
-myVegetables.push(new Vegetables(350, 400, "images/aubergine.png", 30, 30, "Aubergine"));
-myVegetables.push(new Vegetables(400, 400, "images/aubergine.png", 30, 30, "Aubergine"));
+myVegetables.push(new Vegetables(350, 350, "images/aubergine.png", 30, 30, "Eggplant"));
+myVegetables.push(new Vegetables(400, 350, "images/aubergine.png", 30, 30, "Eggplant"));
+myVegetables.push(new Vegetables(350, 400, "images/aubergine.png", 30, 30, "Eggplant"));
+myVegetables.push(new Vegetables(400, 400, "images/aubergine.png", 30, 30, "Eggplant"));
 
 myVegetables.push(new Vegetables(150, 400, "images/avocado.png", 30, 30, "Avocado"));
 myVegetables.push(new Vegetables(200, 400, "images/avocado.png", 30, 30, "Avocado"));
@@ -124,7 +123,6 @@ myVegetables.forEach(veggie => drawVegetables(veggie))
 var defaultVegetables = [].concat(myVegetables) 
 
 // VEGETABLES DRAWING FUNCTION 
-
 function drawVegetables(veggie){
     veggie.img = new Image();
     veggie.img.onload = function() {
@@ -207,8 +205,6 @@ var pickedVegetables = [];
 var myBasket = {};
 
 // What happened after a collision 
-// var currentRecipe = loadRecipe();
-
 function whenCollision() {
     if (currentRecipe['ingredients'].includes(vegetableCollision[0].vgType)){
         goodPick();

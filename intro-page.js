@@ -16,4 +16,5 @@ $("#boy-button").click(function(){
 function clickCharacter(){
     $("#intro").toggle();
     firstMessage();
+    chronometer.startTimer();
 }

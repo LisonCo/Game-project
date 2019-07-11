@@ -27,8 +27,13 @@
             <p>Let's cook!</p>
             <img src="images/full-basket.svg">
         </div>
-            <div id="canvas-div">
-                <canvas id="garden" height="600px" width="600px"></canvas>
+            <div id="canvas-timer">
+                <div id="canvas-div">
+                    <canvas id="garden" height="600px" width="600px"></canvas>
+                </div>
+                <div class="timer"> 
+                    <span id="minDec" class="number">0</span><span id="minUni" class="number">1</span><span>:</span><span id="secDec" class="number">0</span><span id="secUni" class="number">0</span>
+                </div>
             </div>
 
         <div id="right-part">
@@ -70,5 +75,6 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="messages.js"></script>
     <script type="text/javascript" src="intro-page.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
 </body>
 </html>

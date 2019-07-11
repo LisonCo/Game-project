@@ -1,6 +1,6 @@
 .white-box {
     width : 90%;
-    height : 350px;
+    height : 45vh;
     margin : 3%;
     background : white;
     display : flex;
@@ -11,6 +11,8 @@
 .recipe-basket {
     display : flex;
     flex-direction : row;
+    flex-wrap : wrap;
+    height : 45vh;
 }
 
 .recipe-basket-columns {
@@ -44,11 +46,13 @@
 #recipe-ingredients {
     margin-top : 3em;
     font-size : 1.2em;
+    margin-left :0; 
 }
 
 #picked-vg {
     width : 80%;
     padding-left : 2em;
+    padding-top : 1em;
 }
 
 #picked-vg img{
