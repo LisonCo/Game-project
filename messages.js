@@ -16,18 +16,20 @@ function wrongPick(){
 }
 
 // This recipe is finished
+var numberOfRecipeDone = 0;
+
     function recipeReady(){
+        numberOfRecipeDone++;
         var audio = new Audio();
         audio.src = "sounds/win.wav";
         audio.play();
         document.getElementById("message-p").innerHTML = `You are now ready to cook a ${currentRecipe["recipe-name"]}!`;
         $("#win").toggleClass("hidden");
-        $("#new-recipe-button").toggleClass("hidden");
+        return numberOfRecipeDone;
     }
 
 // New recipe button onclick event
     $("#new-recipe-button").click(function(){
-        $("#new-recipe-button").toggleClass("hidden");
         document.getElementById("message-p").innerHTML = "";
         document.getElementById("picked-vg").innerHTML = "";
         $("#win").toggleClass("hidden");

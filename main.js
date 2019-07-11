@@ -229,9 +229,11 @@ function recipeComplete(){
         if(myBasket[currentRecipe['ingredients'][i]]){
             myCount++;
             if (myCount == currentRecipe['ingredients'].length){
-                recipeReady();
+            recipeReady();
             }
          } 
     }
 }
+
+
 

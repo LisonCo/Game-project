@@ -68,6 +68,28 @@ class Chronometer {
   
   function stopChrono(){
       chronometer.stopTimer();
+      chronometer.resetTimer();
       $("#over").toggleClass("hidden");
       document.getElementById("message-p").innerHTML = "";
+      document.getElementById("you-won").innerHTML = `You've picked ingredients for ${numberOfRecipeDone} recipes, now let's cook!`
   }
+
+  function startAgain() {
+    $("#over").toggle();
+    firstMessage();
+    chronometer.startTimer();
+    document.getElementById("message-p").innerHTML = "";
+    document.getElementById("picked-vg").innerHTML = "";
+    myBasket = {};
+    document.getElementById("recipe-ingredients").innerHTML = "";
+    currentRecipe = loadRecipe();
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    myCharacter['x'] = 270;
+    myCharacter['y'] = 270;
+    updateCanvas(myCharacter, defaultVegetables);
+    myVegetables = [].concat(defaultVegetables);
+  }
+
+  $("#start-again-button").click(function(){
+    startAgain();
+  })
