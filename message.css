@@ -6,7 +6,6 @@
     background-color : white;
     border : 3px solid orange;
     font-size : 4em;
-
 }
 
 #win p {
@@ -17,4 +16,14 @@
     height : 50%;
     width : 50%;
     padding-left : 25%;
+}
+
+#over {
+    position:absolute;
+    margin : 2%;
+    width : 600px;
+    height : 600px;
+    background-color : white;
+    border : 3px solid orange;
+    font-size : 4em;
 }

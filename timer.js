@@ -8,6 +8,9 @@ class Chronometer {
     startTimer() {
       this.intervalId = setInterval(function(){
         this.currentTime--;
+        if (this.currentTime == 0){
+            stopChrono();
+        } 
         this.setTime();
         printTime();
       }.bind(this), 1000);
@@ -63,3 +66,8 @@ class Chronometer {
       return currentValue.charAt(0) + currentValue.charAt(1) + ":" + currentValue.charAt(2) + currentValue.charAt(3);
   }
   
+  function stopChrono(){
+      chronometer.stopTimer();
+      $("#over").toggleClass("hidden");
+      document.getElementById("message-p").innerHTML = "";
+  }
