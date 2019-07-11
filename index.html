@@ -23,9 +23,13 @@
 
     <div id="main-div">
 
-        <div id="canvas-div">
-            <canvas id="garden" height="600px" width="600px"></canvas>
+        <div  id="win" class="hidden">
+            <p>Let's cook!</p>
+            <img src="images/full-basket.svg">
         </div>
+            <div id="canvas-div">
+                <canvas id="garden" height="600px" width="600px"></canvas>
+            </div>
 
         <div id="right-part">
             <div id="game-name-image">
@@ -55,15 +59,16 @@
                 </div>
             </div>
             <div>
-                    <button id="new-recipe-button" class="hideButton" type="button">New Recipe</button>
+                    <button id="new-recipe-button" class="hidden" type="button">New Recipe</button>
             </div> 
         </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="intro-page.js"></script>
     <script type="text/javascript" src="Recipe-book.js"></script>
     <script type="text/javascript" src="Recipes-basket.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="messages.js"></script>
+    <script type="text/javascript" src="intro-page.js"></script>
 </body>
 </html>

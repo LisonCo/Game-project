@@ -11,6 +11,22 @@ class Character {
         this.width = width;
         this.height = height;
     }
+ // CHARACTER MOVEMENT
+    moveUp(){
+        myCharacter.y -= 25
+    }
+
+    moveDown(){
+        myCharacter.y += 25
+    }
+
+    moveLeft(){
+        myCharacter.x -= 25
+    }
+
+    moveRight(){
+        myCharacter.x += 25
+    }
 }
 
 var myCharacter = new Character(270, 270, "images/girl.png", 50, 50);
@@ -25,23 +41,6 @@ function prepareCharacter(character){
     character.upd = function() {
         ctx.drawImage(character.img, character.x, character.y, character.height, character.width);
     }
-}
-
-// CHARACTER MOVEMENT
-function moveUp(){
-    myCharacter.y -= 25
-}
-
-function moveDown(){
-    myCharacter.y += 25
-}
-
-function moveLeft(){
-    myCharacter.x -= 25
-}
-
-function moveRight(){
-    myCharacter.x += 25
 }
 
 // SETTING VEGETABLES
@@ -100,10 +99,10 @@ myVegetables.push(new Vegetables(400, 350, "images/aubergine.png", 30, 30, "Aube
 myVegetables.push(new Vegetables(350, 400, "images/aubergine.png", 30, 30, "Aubergine"));
 myVegetables.push(new Vegetables(400, 400, "images/aubergine.png", 30, 30, "Aubergine"));
 
-myVegetables.push(new Vegetables(150, 400, "images/turnip.png", 30, 30, "Turnip"));
-myVegetables.push(new Vegetables(200, 400, "images/turnip.png", 30, 30, "Turnip"));
-myVegetables.push(new Vegetables(150, 450, "images/turnip.png", 30, 30, "Turnip"));
-myVegetables.push(new Vegetables(200, 450, "images/turnip.png", 30, 30, "Turnip"));
+myVegetables.push(new Vegetables(150, 400, "images/avocado.png", 30, 30, "Avocado"));
+myVegetables.push(new Vegetables(200, 400, "images/avocado.png", 30, 30, "Avocado"));
+myVegetables.push(new Vegetables(150, 450, "images/avocado.png", 30, 30, "Avocado"));
+myVegetables.push(new Vegetables(200, 450, "images/avocado.png", 30, 30, "Avocado"));
 
 myVegetables.push(new Vegetables(500, 350, "images/broccoli.png", 30, 30, "Broccoli"));
 myVegetables.push(new Vegetables(500, 400, "images/broccoli.png", 30, 30, "Broccoli"));
@@ -141,10 +140,10 @@ function drawVegetables(veggie){
   document.onkeydown = function(e) {
     e.preventDefault()
     switch (e.keyCode) {
-      case 38: moveUp(); break;
-      case 40: moveDown(); break;
-      case 37: moveLeft(); break;
-      case 39: moveRight(); break;
+      case 38: myCharacter.moveUp(); break;
+      case 40: myCharacter.moveDown(); break;
+      case 37: myCharacter.moveLeft(); break;
+      case 39: myCharacter.moveRight(); break;
     }
     collisionCheck(myCharacter, myVegetables);
     updateCanvas(myCharacter, myVegetables);
@@ -208,8 +207,10 @@ var pickedVegetables = [];
 var myBasket = {};
 
 // What happened after a collision 
+// var currentRecipe = loadRecipe();
+
 function whenCollision() {
-    if (recipeBook['recipe'][0]['ingredients'].includes(vegetableCollision[0].vgType)){
+    if (currentRecipe['ingredients'].includes(vegetableCollision[0].vgType)){
         goodPick();
         pickedVegetables.push(vegetableCollision[0])
         updateBasket();
@@ -228,10 +229,10 @@ function whenCollision() {
 // Check if all the ingredients of the recipe have been picked
 function recipeComplete(){
     var myCount = 0
-    for (i=0; i< recipeBook['recipe'][0]['ingredients'].length; i++){
-        if(myBasket[recipeBook['recipe'][0]['ingredients'][i]]){
+    for (i=0; i< currentRecipe['ingredients'].length; i++){
+        if(myBasket[currentRecipe['ingredients'][i]]){
             myCount++;
-            if (myCount == recipeBook['recipe'][0]['ingredients'].length){
+            if (myCount == currentRecipe['ingredients'].length){
                 recipeReady();
             }
          } 

@@ -1,6 +1,12 @@
 
+/* Canvas  */
 @import "canvas.css";
+/* Intro page  */
 @import "intro-page.css";
+/* Success image  */
+@import "message.css";
+/* Recipe and basket container  */
+@import "recipe-basket-container.css";
 
 @font-face {
     font-family: Handlee;
@@ -54,63 +60,6 @@ h1 {
     font-weight : bold;
 }
 
-.white-box {
-    width : 90%;
-    height : 350px;
-    margin : 3%;
-    background : white;
-    display : flex;
-    flex-direction : column;
-    border : 3px solid orange;
-}
-
-.recipe-basket {
-    display : flex;
-    flex-direction : row;
-}
-
-.recipe-basket-columns {
-    display : flex;
-    flex-direction : column;
-    width : 50%;
-    align-items : center;
-    padding-top : 2%;
-}
-
-.recipe-basket-columns-header {
-    width : 100%;
-    height : 10%;
-    display : flex;
-    flex-direction : column;
-    align-items : center;
-}
-
-.twoImages img {
-    height : 100%;
-    width : 20%;
-    margin-bottom : 10%;
-}
-
-.twoImages{
-    text-align : center;
-    height : 2em;
-    padding-bottom: 0.5em;
-}
-
-#recipe-ingredients {
-    margin-top : 3em;
-}
-
-#picked-vg {
-    width : 80%;
-    padding-left : 2em;
-}
-
-#picked-vg img{
-    height : 40px;
-    width : 40px;
-}
-
 #new-recipe-button {
     background-color: orange;
     border: none;
@@ -123,6 +72,6 @@ h1 {
     font-family: Handlee;
 }
 
-.hideButton {
+.hidden {
     display : none;
 }
