@@ -76,6 +76,7 @@ class Chronometer {
 
   function startAgain() {
     $("#over").toggle();
+    checkWinToggle();
     firstMessage();
     chronometer.startTimer();
     document.getElementById("message-p").innerHTML = "";
@@ -93,3 +94,10 @@ class Chronometer {
   $("#start-again-button").click(function(){
     startAgain();
   })
+
+  function checkWinToggle(){
+    if (!$("#win").hasClass("hidden")){
+      $("#win").toggleClass("hidden")
+    };
+  }
+
