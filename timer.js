@@ -9,7 +9,6 @@ class Chronometer {
       this.intervalId = setInterval(function(){
         this.currentTime--;
         if (this.currentTime == 0){
-          debugger
             stopChrono();
         } 
         this.setTime();
