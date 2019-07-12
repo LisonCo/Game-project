@@ -2,7 +2,7 @@
 
 //STARTING MESSAGE
 function firstMessage(){
-    document.getElementById("message-p").innerHTML = "Pick the right vegetables to make your recipe!";
+    document.getElementById("message-p").innerHTML = "Use the arrows to pick the right vegetables!";
 }
 
 // RIGHT VEGETABLE PICKED
