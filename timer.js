@@ -9,6 +9,7 @@ class Chronometer {
       this.intervalId = setInterval(function(){
         this.currentTime--;
         if (this.currentTime == 0){
+          debugger
             stopChrono();
         } 
         this.setTime();
@@ -75,7 +76,7 @@ class Chronometer {
   }
 
   function startAgain() {
-    $("#over").toggle();
+    $("#over").toggleClass("hidden");
     checkWinToggle();
     firstMessage();
     chronometer.startTimer();
