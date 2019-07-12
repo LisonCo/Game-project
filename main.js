@@ -1,7 +1,19 @@
-// CANVAS
+let game
 
+window.onload = function(){
+    game = {
+        width : $(window).width(),
+        height : $(window).height()
+    }
+    canvas.width = game.height*0.85
+    canvas.height = game.height*0.85
+    myVegetables.forEach(veggie => drawVegetables(veggie))
+}
+
+// CANVAS
 var canvas = document.getElementById("garden");
 var ctx = canvas.getContext('2d');
+
 
 // SETTING CHARACTER
 class Character {
@@ -119,7 +131,7 @@ myVegetables.push(new Vegetables(400, 550, "images/garlic.png", 30, 30, "Garlic"
 myVegetables.push(new Vegetables(450, 550, "images/garlic.png", 30, 30, "Garlic"));
 myVegetables.push(new Vegetables(300, 550, "images/garlic.png", 30, 30, "Garlic"));
 
-myVegetables.forEach(veggie => drawVegetables(veggie))
+// myVegetables.forEach(veggie => drawVegetables(veggie))
 
 var defaultVegetables = [].concat(myVegetables) 
 
@@ -133,6 +145,7 @@ function drawVegetables(veggie){
     veggie.updVeggies = function() {
         ctx.drawImage(veggie.img, veggie.x, veggie.y, veggie.height, veggie.width)
     }
+    //debugger
 }
 
 // KEY LISTENERS
