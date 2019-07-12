@@ -1,94 +1,10 @@
-
-/* Canvas  */
-@import "canvas.css";
+/* Body and font */
+@import "general.css";
+/* Left div  */
+@import "left-part.css";
+/* Right div  */
+@import "right-part.css";
 /* Intro page  */
 @import "intro-page.css";
-/* Success image  */
-@import "message.css";
-/* Recipe and basket container  */
-@import "recipe-basket-container.css";
-
-
-@font-face {
-    font-family: Jua;
-    src: url(font/Jua-Regular.ttf);
-  }
-
-body {
-    background-image : url("images/background.jpg");
-    font-family : Jua;
-    letter-spacing: 0.1em;
-    margin : 0;
-    height: 100vh;
-}
-
-h1 {
-    margin : 0;
-    font-size : 1.2em;
-}
-
-#main-div {
-    display : flex;
-    flex-direction : row;
-}
-
-#right-part {
-    display : flex;
-    flex-direction : column;
-    width : 100%;
-    align-items : center;
-    margin : 2%;
-}
-
-#game-name-image img{
-    width : 20vh;
-    height : 20vh;
-    border : 3px solid orange;
-}
-
-#message {
-    width : 90%;
-    border : 3px solid orange; 
-    height : 8vh;
-    background : white;
-    margin-top : 1em;
-    text-align : center;
-}
-
-#message-p {
-    padding-top : 1vw;
-    font-size : 1.6vw;
-    margin : 0;
-    height : 5vh;
-}
-
-#new-recipe-button {
-    background-color: orange;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    margin-left : 35%;
-    margin-top : 8%;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    font-family: Jua;
-    text-align : center;
-}
-
-#start-again-button {
-    background-color: orange;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    font-family: Jua;
-}
-
-.hidden {
-    display : none;
-}
+/* Success images  */
+@import "pop-up.css";

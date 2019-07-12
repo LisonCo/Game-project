@@ -1,3 +1,7 @@
+.hidden {
+    display : none;
+}
+
 #win {
     position:absolute;
     margin : 2%;
@@ -20,6 +24,21 @@
     padding-right : 30%;
 }
 
+#new-recipe-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-left : 35%;
+    margin-top : 8%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family: Jua;
+    text-align : center;
+}
+
 #over {
     position:absolute;
     margin : 2%;
@@ -29,11 +48,12 @@
     border : 3px solid orange;
     font-size : 4em;
     text-align : center;
-    padding : 3%;
 } 
 
 #over p {
     font-size : 0.6em;
+    padding : 0.5em 1em;
+    margin : 0;
 }
 
 #over img {
@@ -45,4 +65,17 @@
 #over h2 {
     font-size : 1em;
     margin : 0;
+    padding-top : 1em;
+}
+
+#start-again-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family: Jua;
 }

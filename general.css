@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Jua;
+    src: url(font/Jua-Regular.ttf);
+  }
+
+body {
+    background-image : url("images/background.jpg");
+    font-family : Jua;
+    letter-spacing: 0.1em;
+    margin : 0;
+    height: 100vh;
+}
+
+h1 {
+    margin : 0;
+    font-size : 1.2em;
+}
+
+#main-div {
+    display : flex;
+    flex-direction : row;
+}

@@ -1,10 +1,40 @@
+#right-part {
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    align-items : center;
+    margin : 2%;
+}
+
+#game-name-image img{
+    width : 20vh;
+    height : 20vh;
+    border : 3px solid orange;
+}
+
+#message {
+    width : 90%;
+    border : 3px solid orange; 
+    height : 8vh;
+    background : white;
+    margin-top : 1em;
+    text-align : center;
+}
+
+#message-p {
+    padding-top : 1vw;
+    font-size : 1.6vw;
+    margin : 0;
+    height : 5vh;
+}
+
 .white-box {
     width : 90%;
-    height : 45vh;
+    height : 50vh;
     margin : 3%;
     background : white;
     display : flex;
-    flex-direction : column;
+    flex-direction : row;;
     border : 3px solid orange;
 }
 
@@ -12,7 +42,7 @@
     display : flex;
     flex-direction : row;
     flex-wrap : wrap;
-    height : 45vh;
+    height : 50vh;
 }
 
 .recipe-basket-columns {
@@ -21,6 +51,7 @@
     width : 50%;
     align-items : center;
     padding-top : 2%;
+    height : 30vh;
 }
 
 .recipe-basket-columns-header {
