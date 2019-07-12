@@ -24,9 +24,15 @@ var numberOfRecipeDone = 0;
         audio.src = "sounds/win.wav";
         audio.play();
         document.getElementById("message-p").innerHTML = `You are now ready to cook a ${currentRecipe["recipe-name"]}!`;
-        $("#win").toggleClass("hidden");
+        checkWinToggle2();
         return numberOfRecipeDone;
     }
+
+    function checkWinToggle2(){
+        if ($("#win").hasClass("hidden")){
+          $("#win").toggleClass("hidden");
+        };
+      }
 
 // New recipe button onclick event
     $("#new-recipe-button").click(function(){

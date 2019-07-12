@@ -1,4 +1,5 @@
 // CANVAS
+
 var canvas = document.getElementById("garden");
 var ctx = canvas.getContext('2d');
 
