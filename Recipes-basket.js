@@ -1,10 +1,11 @@
-//Display the recipe
+// Choose a random recipe
 
 function randomRecipe(){
     let currentRecipe = recipeBook[Math.floor(Math.random()*recipeBook.length)];
     return currentRecipe;
 }
 
+// Display the recipe on the screen 
 function loadRecipe(){
     var currentRecipe = randomRecipe();
     document.getElementsByTagName("h1")[0].innerHTML = currentRecipe['recipe-name'];

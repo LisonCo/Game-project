@@ -1,4 +1,3 @@
-
 // CANVAS
 var canvas = document.getElementById("garden");
 var ctx = canvas.getContext('2d');
@@ -172,7 +171,6 @@ function setBoundaries(character){
 }
 
 // COLLISIONS
-
 var vegetableCollision = []
 
 function checkForCollision(character, veggie) {
@@ -223,7 +221,7 @@ function whenCollision() {
     vegetableCollision = [];
 }
 
-// Check if all the ingredients of the recipe have been picked
+// Checks if all the ingredients of the recipe have been picked
 function recipeComplete(){
     var myCount = 0
     for (i=0; i< currentRecipe['ingredients'].length; i++){
